@@ -5,39 +5,62 @@ body
     display: flex;
     flex-direction: column;
     font-family: sans-serif;
-    font-size: 110%;
+    font-size: 75%;
     color :black;
-    background-color: antiquewhite;
+    background: antiquewhite url('');
     border: 15px solid rgb(247, 116, 29);
     padding: 10px solid;
+
 }
-     #heading
-     {
-    font-style: italic;
-    font-family: sans-serif;
-    font-size: 110%;
-    height: 400px;
-    color:rgb(182, 204, 252);
-    background-color: darkolivegreen;
-    text-align:center;
-    margin: 0px;
-    padding: 0px;
     
+    /* . picture element */
+    .helipicelement {
+     
+      margin: 0px;
+      padding: 0px;
 
-    margin: 0%;
-    border: 0%;
-    padding: 1rem;
+    }
 
+      /*background image*/
+     .background-image {
+      background-image: url("./simpic.jpg");
+      
+      opacity: 50;
+      height: 500px;
+      width: auto;
+      margin: 0%;
+      color: rgb(0, 0, 0);
+      border: 1px solid rgb(16, 15, 14);
 
-     }
+      
+      
+     
+    }
+    
+    .container {
+      
+      text-align: center;
+      font-size: 60%;
+      color: black;
+      margin: 1rem;
+      text-align: center;
+;
+    }
+
          #ProfilePic
          {
-    width: 15%;
+    width:200px;
     height: auto;
-    margin: 0px;
+    margin: 2%;
     border-radius: 50%;
     border: 5px solid rgb(226, 89, 39);
          }
+
+         #name {
+          font-size: 100%;
+         }
+
+         
 
 
 
@@ -49,21 +72,63 @@ body
     margin: 0%;
     border: 0%;
     padding: 0%;
-    
+
      }
+     /* CSS media queries - Bootstrap Grid Containers ß*/
+     /* For turning sidebar into navigation bar on mobile view(max-width: 1000px)*/
+     @media screen and (max-width: 1000px) {
+      .main {
+        
+        flex-direction: column;
+
+        
+      }
+      
+      
+     }
+     /* CSS media queries */
+     @media screen and (max-width: 1000px){
+      .sidebar {
+      width: 20%;
+     }
+    }
+
+
          .content
          {
+         
          padding: 1%;
          margin: 0px;
          border: 0px;
          contain: padding 0px;
+         background-color: blue;
          }
-             #sidebar
+         @media screen and (max-width: 1000px) {
+          .content {
+            font-size: 80%;
+          }
+         }
+         @media screen and (max-width: 450px) {
+          .content {
+            font-size: 50%;
+          }
+         }
+
+         .grid-container{
+
+          background-color: bisque;
+          padding: 7px;
+         }
+
+         
+             .sidebar
              {
-             width: 20%;
+              color: black;
+              font-size: 90%;
+             width: auto;
              max-height: fit-content;
              padding: 1rem;
-             border: 0px ;
+             border: 1px solid rgb(117, 70, 237);
              margin: 0px;
              background-color: skyblue;
     
@@ -80,49 +145,72 @@ body
      {
      text-align: center;
      background-color:darkolivegreen;
-     height: 150px;
+     height: auto;
      padding: 1rem;
      margin: 0px;
      border: 0px;
    
-     }
-          .icons
+     }         /*Animation of icon images*/
+               @keyframes icons
+                {
+               0% {transform: translateY(10px)}
+                
+  }
+     
+             .icons
              {
             text-align: center;
             font-size: 5%;
-    
+            animation-name: icons;
+            animation-duration: 1s;
+            animation-iteration-count:infinite ;
+            animation-timing-function: ease-in-out;
+            
+            animation-direction: alternate;
+           
              }
-                  #LinkedInLogo
+                  #linkedinlogo
                   {
                     text-align: center;
                     border-radius: 50%;
                     border: 5px solid rgb(247, 116, 29);
+                    text-align: center;
+                    position: relative;
+                    bottom: 10px;
      
                   }
+                  
                 
                   #githublogo
                   {
                     text-align: center;
                     border-radius: 50%;
                     border: 5px solid rgb(247, 116, 29);
+                    position: relative;
+                    bottom: 10px;
+                    margin: 7px;
+
+                    
      
                   }    
+                  
 
                   #whatsapplogo
                   {
                     text-align: center;
                     border-radius: 50%;
                     border: 5px solid rgb(247, 116, 29);
+                    position: relative;
      
                   }
 
                   #gmailwhatsapplogo
                   {
-                    font-size: 20px;
-                    text-align: right;
+                    text-align: center;
                     border-radius: 50%;
                     border: 5px solid rgb(247, 116, 29);
-                    
+                    position: relative;
+                    bottom: 10px;
      
                   }
                   
@@ -134,7 +222,7 @@ body
                   
     
 
-     
+     /* stylesheet for Contact Detail page */
       #detailicons
       { text-align: center;
         display: flex;
@@ -156,3 +244,4 @@ body
         border: 5px solid rgb(247, 116, 29);
 
       }
+      

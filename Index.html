@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  
 
   <head>
    
     <title>
-      Resume' 1
+      Resume' 9
     </title>
+
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  <link rel="stylesheet" . type="text.css" href="css/stylesheetanimation.css">
+
+  
+  
+  <meta characterset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
 
@@ -15,54 +36,108 @@
 
   <body class="body">
 
+    
+    <picture class="helipicelement">
+     
+     <!--Picture Element-->
+      <source media="(max-width: 450px)" srcset="./helipicelement2-small.jpg">
+      <source media="(max-width: 1000px)" srcset="./helipicelement2-med.jpg">
+      <img src="./helipicelement2.jpg" alt="showhelisimpic">
 
-   <header id="heading">
+    </picture>
 
-      <img src="profilepicture.jpg"
-      alt="Chopper Logo"
-      id="ProfilePic"
-      >
-  
-      <p>
-        <h1>Schalk du Plessis</h1>
-      </p> 
-      </p> 
-           
-            Detail-oriented Full-Flight Simulator Engineer  with 6+ years of experience in managing different phases of engineering operations and client interaction.
-             Capable of handling projects and producing results within a team or as an individual.
-            Motivated to offer the highest quality of services with a complete focus on safety and efficiency.
-           
-      </p>
+    
+    <div class="background-image">
 
-   </header>
+      <div class="container">
+        <!-- Bootsytap Responsive Media -->
+        <div class="col-mx-auto text-center">
+
+          <img src="profilepicture.jpg"
+          class="img-fluid"
+          alt="Chopper Logo"
+          id="ProfilePic"
+          >
+    
+        </div>
+
+        <div id="name">
+
+         <p>
+          <!-- Bootsytap Responsive Media -->
+          <h2 class="col-mx-md-5 text-center">Schalk du Plessis</h2>
+         </p> 
+
+         <p class="font-weight-heavy"> 
+          Detail-oriented Full-Flight Simulator Engineer and Teamleader with 7+ years of experience in managing different phases of engineering operations and client interaction.
+           Capable of handling projects and producing results within a team or as an individual.
+          Motivated to offer the highest quality of services with a complete focus on safety and efficiency.
+         </p>
+        </div> 
+      </div>
+      
+
+    </div>
+
+    <!-- Bootstrap Carousel-->
+    <div id="carouselExampleIndicators" class="carousel slide bg-dark" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./helipicelement.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./helipicelement4.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./helipicelement3.jpeg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
 
    <main class="main">
 
-    <div id="sidebar">
+
+    <!-- Sidebar with Menu -->
+    <div class="sidebar">
     <nav>
 
-      <h2><u>Menu</u></h2>
-  
-     
-     <p>
-      <ul class="navlist">
-        <li><a href="#skills"> Skills </a></li>
-        <li><a href="#Interests"> Interests </a></li>
-        <li><a href="#Experience"> Experience </a></li>
-        <li><a href="#Education"> Education </a></li>
-        
-        
-        
-      </ul>
-     </p>
 
+      <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <!-- Bootsytap Responsive Media -->
+          <div class="col-mx-md-5"></div><h7><u></u>Menu</u></h7></a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <li><a class="dropdown-item" href="#Skills"> Skills </a></li>
+          <li><a class="dropdown-item" href="#Interests"> Interests </a></li>
+          <li><a class="dropdown-item" href="#Experience"> Experience </a></li>
+          <li><a class="dropdown-item" href="#Education"> Education </a></li>
+          <li><a class="dropdown-item" href="#foot"> Contact Details  </a></li>
+
+
+        </div>
+     
      </nav>
     </div>
 
-    <div class="content">
-      
-      <p><u><h2 h2 id="skills">Skills</h2></u></p>
+     <div class="content">
 
+      <div class="grid-container">
+      
+      <p><u><h4 id="skills">Skills</h4></u></p>
+      <hr>
       <ul>
         <li>Maintaining Electrostatic sensitive devices.</li>
         <li>Fault Finding/Troubleshooting Electrical and Electronic systems.</li>
@@ -70,12 +145,12 @@
         <li>Repairing of Flight Instruments.</li>
         <li>Maintaining Hydraulic Actuators/ Accumulators/ Motors and Pumps.</li>
       </ul>
+    </div>
 
-      <hr>
-
-
-      <p><u><h2 h2 id="Interests">Interests</h2></u></p>
-
+      <div class="grid-container">
+        <hr>
+      <p><u><h4 id="Interests">Interests</h4></u></p>
+        <hr>
       <ul>
         <li>Genral Aviation Enthusiast.</li>
         <li>Advancement of Technilogical systems. </li>
@@ -88,15 +163,18 @@
       </ul>
 
 
-      <hr>
+      
+      
+      </div>
 
-      <p>
-        <u><h2 h2 id="Experience">Experience</h2></u>
-      </p>
+      <div class="grid-container">
+      <p><hr>
+        <u><h4 id="Experience">Experience</h4></u>
+      </p><hr>
   
   
       <p>
-        <h3>Full Flight Simulator - Maintenance Technician</h3>
+        <h5>Full Flight Simulator - Maintenance Technician</h5>
       </p>
       <p>
         Electrical, Electronic & Hydraulic maintenance. Running and Checking Qualification
@@ -122,7 +200,7 @@
 
   
        <p>
-        <h3>Flight Simulator Engineer - Visual Specialist</h3></p>
+        <h5>Flight Simulator Engineer - Visual Specialist</h5></p>
        <p>
         <p>Specializing in the following visual systems:
           Image Generators/ Projector Systems:
@@ -138,22 +216,22 @@
           </ul>
         </p>
 
-        <hr>
-      
-      <p>
-        <u><h2 id="Education">Education</h2></u>
-      </p>
+        
+        <div class="grid-container">
+      <p><hr>
+        <u><h4 id="Education">Education</h4></u>
+      </p><hr>
   
       <p>
-        <h3>Intro to Web at <a href="https://www.codespace.co.za/" target="_blank">CodeSpace Academy</a></h3>
+        <h5>Intro to Web at <a href="https://www.codespace.co.za/" target="_blank">CodeSpace Academy</a></h5>
       </p>
       <p>
         <ul><li>
-          Basic webpage development. Coding languages: HTML and CSS.
+          Basic webpage development. Coding languages: HTML / CSS and JavaScript.
         </li></ul>
           
       <p>
-        <h3>Aircraft Avionician - Avionics</h3>
+        <h5>Aircraft Avionician - Avionics</h5>
       </p>
 
       <ul><li>
@@ -176,16 +254,9 @@
       </li></ul>
     
 
-      
-
-      
-
-        
-  
-      
-
-      
-    </div>
+    </div>  
+      </div>
+      </div>
 
    </main>
 
@@ -193,18 +264,25 @@
 
    <div>
     <nav>
-      <p>
-        <h2>Contact Details </h2>
-      </p>
+      <!-- Jumbotron Click on Contact Details to show -->
+      <a class="btn btn primary" data-toggle="collapse"
+      href="#collapseExample" role="button" aria-expanded="false"
+      aria-controls="collapseExample">
 
+      <h2 class="font-monospace">Contact Details </h2>
+
+      
+      </div>
       
 
       <p class="icons" >
-        <a href="linkedinlogo.jpg"
+        
+        <a href="https://www.linkedin.com/in/schalk-du-plessis-840bba14a?lipi=urn%3Ali%3Apage%3Ad
+        _flagship3_profile_view_base_contact_details%3BCDKEK7uySEmKo%2F0aZir07A%3D%3D"
         target="blank"> 
-        <img src=".linkkedinlogo.jpeg" 
-        alt="githublogo"
-        id="githublogo"> 
+        <img src="./linkedinlogo.jpg" 
+        alt="linkedinlogo"
+        id="linkedinlogo"> 
         </a>
 
         
@@ -216,14 +294,23 @@
          id="githublogo"> 
         </a>
         
-        <a href="http://127.0.0.1:5500/GMail&Number.html"
+        <a href="ContactDetailsPage.html"
         target="_blank">
         <img src="./gmailwhatsapplogo.jpg"
         alt="whatsapplogo"
         id="gmailwhatsapplogo">
-        
         </a>
-        
+        </div>
+  
+        <div class="collapse" id="collapseExample">
+          <div class="card card">
+          Email : schalkswdup@gmail.com
+          WhatsApp : (+27) 64 527 9416
+        </div>
+      
+      </a>
+
+      
 
 
       </p> 
@@ -234,6 +321,10 @@
 
  
 
-    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   </body>
 </html>
